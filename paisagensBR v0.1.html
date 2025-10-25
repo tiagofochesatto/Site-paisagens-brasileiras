@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paisagens Brasileiras</title>
+    <style>
+        /* ======= ESTILOS GERAIS ======= */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background-color: #f4f7f6;
+            color: #333;
+        }
+
+        /* ======= NAVBAR ======= */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #006d5b;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 40px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            z-index: 1000;
+        }
+
+        nav .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 25px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ffd166;
+        }
+
+        /* ======= SEÇÕES ======= */
+        section {
+            padding: 100px 10% 60px;
+            min-height: 100vh;
+        }
+
+        section h2 {
+            font-size: 2em;
+            color: #006d5b;
+            margin-bottom: 20px;
+        }
+
+        section p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .landscape {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .landscape img {
+            width: 100%;
+            max-width: 550px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        .text {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        /* ======= RODAPÉ ======= */
+        footer {
+            background-color: #006d5b;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+        }
+
+        /* ======= RESPONSIVIDADE ======= */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+                margin-top: 10px;
+            }
+
+            .landscape {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ======= NAVBAR ======= -->
+    <nav>
+        <div class="logo">Paisagens Brasileiras</div>
+        <ul>
+            <li><a href="#introducao">Início</a></li>
+            <li><a href="#amazonia">Amazônia</a></li>
+            <li><a href="#lencois">Lençóis Maranhenses</a></li>
+            <li><a href="#chapada">Chapada Diamantina</a></li>
+            <li><a href="#cataratas">Cataratas do Iguaçu</a></li>
+        </ul>
+    </nav>
+
+    <!-- ======= INTRODUÇÃO ======= -->
+    <section id="introducao">
+        <h2>Bem-vindo às Paisagens Brasileiras</h2>
+        <p>O Brasil é um país repleto de belezas naturais únicas. De florestas tropicais a chapadas, dunas e cachoeiras, cada canto guarda paisagens de tirar o fôlego. Este site foi criado para apresentar algumas das mais belas paisagens do nosso país, valorizando a riqueza ambiental e cultural de cada região.</p>
+    </section>
+
+    <!-- ======= AMAZÔNIA ======= -->
+    <section id="amazonia">
+        <h2>Amazônia</h2>
+        <div class="landscape">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/eb/Amazon_rainforest.jpg" alt="Floresta Amazônica">
+            <div class="text">
+                <p>A maior floresta tropical do mundo, a Amazônia abriga uma biodiversidade incomparável. Localizada no norte do Brasil, ela é responsável por grande parte da regulação climática do planeta e é o lar de milhões de espécies de plantas e animais.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======= LENÇÓIS MARANHENSES ======= -->
+    <section id="lencois">
+        <h2>Lençóis Maranhenses</h2>
+        <div class="landscape">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/1f/Lencois_Maranhenses_2018.jpg" alt="Lençóis Maranhenses">
+            <div class="text">
+                <p>Localizado no Maranhão, o Parque Nacional dos Lençóis Maranhenses é um espetáculo natural formado por dunas de areia branca e lagoas de água doce. Durante o período chuvoso, as lagoas se enchem, criando uma paisagem surreal e encantadora.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======= CHAPADA DIAMANTINA ======= -->
+    <section id="chapada">
+        <h2>Chapada Diamantina</h2>
+        <div class="landscape">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Morro_do_Pai_Inácio.jpg" alt="Chapada Diamantina">
+            <div class="text">
+                <p>No coração da Bahia, a Chapada Diamantina é um paraíso para aventureiros. Com trilhas, grutas, cachoeiras e mirantes impressionantes, é um dos destinos mais procurados para ecoturismo e turismo de aventura no Brasil.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======= CATARATAS DO IGUAÇU ======= -->
+    <section id="cataratas">
+        <h2>Cataratas do Iguaçu</h2>
+        <div class="landscape">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Iguazu_Falls_from_Brazilian_side_2014.jpg" alt="Cataratas do Iguaçu">
+            <div class="text">
+                <p>Uma das Sete Maravilhas Naturais do Mundo, as Cataratas do Iguaçu ficam na fronteira entre Brasil e Argentina. O conjunto de mais de 270 quedas d’água forma um espetáculo impressionante, cercado por uma exuberante floresta subtropical.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======= RODAPÉ ======= -->
+    <footer>
+        <p>&copy; 2025 Paisagens Brasileiras | Desenvolvido por Tiago</p>
+    </footer>
+
+</body>
+</html>
